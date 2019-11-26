@@ -1,0 +1,76 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>XOX Game With socket.io!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+  </head>
+  <body>
+    <header>
+      <div id="uyari"></div> 
+      <h1>XOX Game With Socket.io</h1> 
+    </header>
+    <main>
+      
+  <div class="tic-tac-toe Inline">
+    <h1 id="yourname" class="inline"></h1> 
+      <h1 id="vs" class="inline"><span id="yourcount">0</span> VS <span id="othercount">0</span></h1> 
+    <h1 id="othername" class="inline"></h1>
+  </div>
+      
+	<div class="tic-tac-toe">
+		<div id="sq1" class="tile free"></div>
+		<div id="sq2" class="tile free"></div>
+		<div id="sq3" class="tile free"></div>
+		<div id="sq4" class="tile free"></div>
+		<div id="sq5" class="tile free"></div>
+		<div id="sq6" class="tile free"></div>
+		<div id="sq7" class="tile free"></div>
+		<div id="sq8" class="tile free"></div>
+		<div id="sq9" class="tile free"></div>
+	</div>
+      
+  <div class="nickname">
+    <form>
+      <input id="nickname" autocomplete="off" placeholder="Write your nickname..." /><button id="ibtn">Send</button>
+    </form>
+  </div>
+      
+  <div class="secim">
+   <button class="karakter">X</button>
+   <button class="karakter">O</button>
+  </div>    
+      
+    </main>
+
+    <footer>
+      <p>made by <a href="https://github.com/muhsin61">Avare</a></p>
+    </footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+
+  </body>
+</html>
