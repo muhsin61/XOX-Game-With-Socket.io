@@ -1,0 +1,139 @@
+/* styles */
+/* called by your view template */
+
+
+html {
+			font-family: 'Raleway', sans-serif;
+			font-weight: 400;
+			font-size: 12px;
+		}
+		.container {
+			max-width: 400px;
+			margin: 2em auto;
+			text-align: center;
+			line-height: 1.5;
+		}
+		h1 {
+			margin: 1em auto;
+      text-align: center;
+		}
+		a {
+			text-decoration: none;
+			color: pink;
+			font-weight: 700;
+		}
+		span.red {
+			color: red;
+			font-weight: 700;
+		}
+		span.blue {
+			color: blue;
+			font-weight: 700;
+		}
+		span.pink {
+			color: pink;
+		}
+		.button {
+			width: 90px;
+			height: 15px;
+			border-radius: 5px;
+			padding: 5px;
+			margin: 0 auto;
+			cursor: pointer;
+			text-align: center;
+			background-color: pink;
+			font-size: 13px;
+			color: #fff;
+		}
+		.tic-tac-toe {
+			width: 315px;
+			height: auto;
+			margin: 0 auto;
+      z-index: -1;
+		}
+		.tile {
+			height: 100px;
+			width: 100px;
+			display: inline-block;
+			cursor: pointer;
+			position: relative;
+			vertical-align: top;
+			padding: 15px;
+			margin-bottom: 5px;
+			box-sizing: border-box;
+			color: #05386B;
+			font-size: 60px;
+			text-align: center;
+		}
+		.free {
+			background-color: #41B3A3;
+		}
+		.O-play {
+			background-color: blue;
+		}
+		.X-play {
+			background-color: red;
+		}
+.karakter{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+form{
+  text-align: center;
+  
+}
+.secim{
+  text-align: center;
+}
+footer{
+  text-align: center;
+  
+}
+input{
+  border: none;
+  border-bottom: pink 1px solid ;
+  padding: 10px;
+}
+input:focus{
+  animation: act 1s;
+}
+@keyframes act {
+  from {border: blue 1px dotted;}
+  to {border: red 3px solid;}
+}
+#ibtn{
+  border: none;
+  border-bottom: pink 1px solid ;
+  padding: 10px;
+}
+#ibtn:hover{
+  background-color: tomato;
+}
+#uyari{
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  background-color: red;
+  width: 100%;
+  //margin: 10px;
+  padding: 10px;
+}
+.inline{
+  display: inline;
+  position: relative;
+}
+.Inline{
+    text-align: center;
+}
+#vs{
+  color: tomato;
+}
+span{
+  color: blue;
+}
