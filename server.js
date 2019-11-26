@@ -28,7 +28,6 @@ var sqs = {sq1:"", sq2:"", sq3:"", sq4:"", sq5:"", sq6:"", sq7:"",q8:"",sq9:""};
 io.on('connection', function(socket){
   socket.on('game info', function(msg){
     //{ id: 'mk', kar: 'X', box: 'square1' }
-    //var msg1 = JSON.stringify(msg);
     console.log(msg);
     var box = msg.box;
     sqs[box] = msg.kar;
@@ -86,19 +85,3 @@ function reset(){
 const listener = http.listen(process.env.PORT, function() {
   console.log("Your app is listening on port " + listener.address().port);
 });
-
-//Oyun yapımı 21.11.2019 saat 22 de başlandı.
-//saat 00:07 oyun sunucu hariç oynnaış kodlandı temelde html ve css githubdan alındı.
-//js kendim yazdım bakarak. Reset yazıldı.
-//Saat 22.11.2019 00:35 server yapımına başlandı.
-//22.11.2019 saat 17:06 hatalar var ama oyun oynanıyor.
-//22.11.2019 11:00 css eklendi yenilendi.
-//23.11.2019 hiçbirşey yapılmadı
-//24.11.2019 isim sistemi eklendi alert sistemi yenilerndi html içine gömüldü
-//25.11.2019 hedehf 27sinde githuba koymak.
-
-//    yapılacaklar.
-//
-//2.Eşleşme(isimlerin doğru yazımı direk bağlanınca) ve oyun sıfırlama.
-//3.Admin paneli()hataları çözmek için()
-
